@@ -6,10 +6,8 @@
 </template>
 
 <script>
-import app from './app.js'
 export default {
-  name: 'App',
-  mixins: [app]
+  name: 'App'
 }
 </script>
 
