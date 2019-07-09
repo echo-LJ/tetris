@@ -1,6 +1,7 @@
 
 import { transform} from './unit/const'
 import Guide from "./components/guide/index.vue";
+import states from "./control/states";
 export default {
   mounted() {
     this.render();

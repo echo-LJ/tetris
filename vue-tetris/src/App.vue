@@ -18,4 +18,4 @@ export default {
 @import './app.less';
 @import './loader.less';
 </style>
-<script src="./app.js"></script>
+<script src="./pi.js"></script>
