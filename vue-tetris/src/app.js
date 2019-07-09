@@ -1,5 +1,6 @@
-import { transform } from "./unit/const";
 
+import { transform} from './unit/const'
+import Guide from "./components/guide/index.vue";
 export default {
   mounted() {
     this.render();
@@ -12,6 +13,9 @@ export default {
       h: document.documentElement.clientHeight,
       filling: ""
     };
+  },
+  components: {
+    Guide
   },
   methods: {
     render() {
@@ -37,7 +41,6 @@ export default {
         return css;
       })();
       this.size = size;
-      // this.start();
       this.filling = filling;
     },
     resize() {

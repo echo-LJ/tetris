@@ -1,5 +1,8 @@
 <template>
-  <div id="app">
+  <div id="app" :style="size">
+    <div class="rect" :class="drop?'drop':''">
+    </div>
+    <Guide/>
     <img src="./assets/logo.png">
     <router-view/>
   </div>
