@@ -1,13 +1,13 @@
 import store from '../vuex/store'
 import { want, isClear, isOver } from '../unit/'
-import {
-  speeds,
-  blankLine,
-  blankMatrix,
-  clearPoints,
-  eachLines
-} from '../unit/const'
-import { music } from '../unit/music'
+// import {
+//   speeds,
+//   blankLine,
+//   blankMatrix,
+//   clearPoints,
+//   eachLines
+// } from '../unit/const'
+// import { music } from '../unit/music'
 
 const getStartMatrix = startLines => {
   // 生成startLines

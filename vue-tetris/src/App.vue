@@ -2,9 +2,8 @@
   <div id="app" :style="size">
     <div class="rect" :class="drop?'drop':''">
     </div>
+    <Keyboard :filling='filling' />
     <Guide/>
-    <img src="./assets/logo.png">
-    <router-view/>
   </div>
 </template>
 

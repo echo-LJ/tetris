@@ -1,7 +1,8 @@
 
-import { transform} from './unit/const'
+import { transform} from './unit/const';
+import Keyboard from "./components/keyboard/index.vue";
 import Guide from "./components/guide/index.vue";
-import states from "./control/states";
+import { mapState } from "vuex";
 export default {
   mounted() {
     this.render();
@@ -15,8 +16,12 @@ export default {
       filling: ""
     };
   },
+  computed: {
+    ...mapState(["drop"])
+  },
   components: {
-    Guide
+    Guide,
+    Keyboard
   },
   methods: {
     render() {
@@ -43,6 +48,7 @@ export default {
       })();
       this.size = size;
       this.filling = filling;
+      console.log(this.filling);
     },
     resize() {
       this.w = document.documentElement.clientWidth;

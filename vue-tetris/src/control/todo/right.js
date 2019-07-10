@@ -1,8 +1,8 @@
 import { want } from '../../unit/'
 import event from '../../unit/event'
 import states from '../states'
-import { speeds, delays } from '../../unit/const'
-import { music } from '../../unit/music'
+// import { speeds, delays } from '../../unit/const'
+// import { music } from '../../unit/music'
 const down = store => {
   store.commit('key_right', true)
   event.down({

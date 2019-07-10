@@ -1,7 +1,7 @@
 import { want } from "../../unit/";
 import event from "../../unit/event";
 import states from "../states";
-import { music } from "../../unit/music";
+// import { music } from "../../unit/music";
 const down = store => {
   store.commit("key_drop", true);
   event.down({
